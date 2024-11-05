@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(218, 214, 214);
+}
+
+header {
+    text-align: center;
+}
+
+.flex-container_1 {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 232, 202);
+}
+
+.flex-element_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 40px;
+    background-color: rgb(248, 162, 2);
+}
+
+.flex-element_2 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    margin: 0 20px;
+    background-color: rgb(248, 162, 2);
+}
+
+.flex-element_3 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    margin: 0 20px;
+    background-color: rgb(248, 162, 2);
+}
+
+.green_box {
+    display: flex;
+    width: 40%;
+    background-color: rgb(188, 234, 188);
+}
+
+.flex-container {
+    display: flex;
+    padding: 40px;
+}
+
+.flex-element {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(253, 252, 250);
+}
+
+.firstWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.secondWrapper {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.flex-element_2 {
+    margin-right: 5px;
+
+}
+.main {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .flex-container_1 {
+    flex-direction: column; /* Убираем боковое расположение и делаем вертикальным */
+    align-items: center;
+  }
+  .mainWrapper {
+    width: 100%;
+  }
+  .flex-element_1,
+  .flex-element_2,
+  .flex-element_3 {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .green_box {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-element {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  .flex-element {
+    width: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
